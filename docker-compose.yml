@@ -1,0 +1,9 @@
+version: '2'
+services:
+  moby:
+    build: .
+    container_name: mobysource
+    ports:
+      - "80:80"
+    volumes:
+      - "./:/app"
